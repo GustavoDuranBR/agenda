@@ -14,3 +14,7 @@ class Evento(models.Model): # criando uma tabela no BD
 
     def __str__(self):
         return self.titulo
+
+    def get_data_evento(self):
+        return self.data_evento.strftime('%d/%m/%Y às %H:%M')
+
